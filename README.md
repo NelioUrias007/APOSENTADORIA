@@ -40,7 +40,7 @@
 </head>
 <body>
     <h1>SARGENTÔMETRO</h1>
-    <img src="inconfidentes.png" alt="Imagem">
+    <img src="Inconfidentes.png" alt="Imagem">
     <div id="countdown"></div>
 
     <script>
