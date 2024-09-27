@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,7 @@
     <style>
         body {
             text-align: center;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Arial', 'Helvetica', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -39,29 +40,26 @@
 </head>
 <body>
     <h1>SARGENTÔMETRO</h1>
-    <img src="Inconfidentes.png" alt="Imagem">
+    <img src="Inconfidentes.png" alt="Imagem de Inconfidentes" />
     <div id="countdown"></div>
 
     <script>
-        // Defina a data de término do contador regressivo
-        var countDownDate = new Date("Dec 6, 2024 00:00:00").getTime();
+        const countDownDate = new Date("Dec 6, 2024 00:00:00").getTime();
 
-        // Atualize o contador a cada segundo
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
 
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
+                document.getElementById("countdown").innerHTML = "O tempo acabou!";
             }
         }, 1000);
     </script>
