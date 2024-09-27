@@ -32,15 +32,15 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
         img {
-            max-width: 80%;
-            max-height: 50%;
+            max-width: 112%;
+            max-height: 70%;
             object-fit: contain;
         }
     </style>
 </head>
 <body>
     <h1>SARGENTÔMETRO</h1>
-    <img src="Inconfidentes.png" alt="Imagem">
+    <img src="inconfidentes.png" alt="Imagem">
     <div id="countdown"></div>
 
     <script>
