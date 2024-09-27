@@ -1,67 +1,213 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SARGENTÔMETRO</title>
+    <title>SARGENTÔMETRO - Turma Inconfidentes</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-        body {
-            text-align: center;
-            font-family: 'Arial', 'Helvetica', sans-serif;
+        /* Reset básico */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fonte e background */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #f06, #4a90e2);
-            color: white;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            position: relative;
+            padding: 20px;
         }
-        h1 {
-            font-size: 3em;
+
+        /* Cabeçalho com a imagem */
+        .header {
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        #countdown {
-            font-size: 2em;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: rgba(0, 0, 0, 0.5);
+
+        .header img {
+            max-width: 200px;
+            height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-        img {
-            max-width: 80%;
-            max-height: 50%;
-            object-fit: contain;
+
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        #contador {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 30px;
+            border-radius: 10px;
+            min-width: 120px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .numero {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Adicionando animação para os números */
+        .numero::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: #ff6347;
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.5s;
+        }
+
+        .item:hover .numero::after {
+            transform: scaleX(1);
+        }
+
+        .texto {
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .texto i {
+            color: #ff6347;
+        }
+
+        /* Mensagem final */
+        #mensagem-final {
+            font-size: 2em;
+            margin-top: 40px;
+            display: none;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .numero {
+                font-size: 2em;
+            }
+
+            .item {
+                padding: 15px 20px;
+                min-width: 100px;
+            }
+
+            .header img {
+                max-width: 150px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>SARGENTÔMETRO</h1>
-    <img src="Inconfidentes.png" alt="Imagem de Inconfidentes" />
-    <div id="countdown"></div>
+
+    <div class="header">
+        <img src="inconfidentes.png" alt="Turma Inconfidentes">
+    </div>
+
+    <div>
+        <h1>SARGENTÔMETRO</h1>
+        <p>Contagem regressiva para a formatura da Turma Inconfidentes<br>Curso de Formação de Sargentos - CBMMG</p>
+
+        <div id="contador">
+            <div class="item">
+                <span class="numero" id="dias">0</span>
+                <div class="texto"><i class="fa-solid fa-calendar-day"></i> Dias</div>
+            </div>
+            <div class="item">
+                <span class="numero" id="horas">0</span>
+                <div class="texto"><i class="fa-solid fa-clock"></i> Horas</div>
+            </div>
+            <div class="item">
+                <span class="numero" id="minutos">0</span>
+                <div class="texto"><i class="fa-solid fa-stopwatch"></i> Minutos</div>
+            </div>
+            <div class="item">
+                <span class="numero" id="segundos">0</span>
+                <div class="texto"><i class="fa-solid fa-hourglass-half"></i> Segundos</div>
+            </div>
+        </div>
+
+        <div id="mensagem-final">🎓 Formados! 🎉</div>
+    </div>
 
     <script>
-        const countDownDate = new Date("Dec 6, 2024 00:00:00").getTime();
+        // Definindo a data de término da contagem
+        const dataDeTermino = new Date("Dec 6, 2024 00:00:00").getTime();
 
+        // Atualiza a contagem regressiva a cada 1 segundo
         const x = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countDownDate - now;
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Obtém a data e hora atuais
+            const agora = new Date().getTime();
 
-            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            // Calcula a diferença entre agora e a data de término
+            const diferenca = dataDeTermino - agora;
 
-            if (distance < 0) {
+            // Cálculo do tempo restante em dias, horas, minutos e segundos
+            const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+            // Exibe o resultado nos elementos correspondentes
+            document.getElementById("dias").innerHTML = dias;
+            document.getElementById("horas").innerHTML = horas;
+            document.getElementById("minutos").innerHTML = minutos;
+            document.getElementById("segundos").innerHTML = segundos;
+
+            // Se a contagem terminar, exibe uma mensagem
+            if (diferenca < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "O tempo acabou!";
+                document.getElementById("contador").style.display = "none";
+                document.getElementById("mensagem-final").style.display = "block";
             }
         }, 1000);
     </script>
+
 </body>
 </html>
