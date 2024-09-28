@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +19,7 @@
             box-sizing: border-box;
         }
 
-        /* Fonte e background */
+        /* Fonte e fundo */
         body {
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -42,7 +43,10 @@
             max-width: 200px;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Remova o box-shadow se estiver afetando a transparência */
+            box-shadow: none;
+            /* Garanta que a imagem preserve a transparência */
+            background: transparent;
         }
 
         h1 {
@@ -81,25 +85,7 @@
             font-family: 'Oswald', sans-serif;
             font-size: 2.5em;
             margin-bottom: 10px;
-            position: relative;
             display: inline-block;
-        }
-
-        /* Adicionando animação para os números */
-        .numero::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 4px;
-            background: #ff6347;
-            bottom: -5px;
-            left: 0;
-            transform: scaleX(0);
-            transition: transform 0.5s;
-        }
-
-        .item:hover .numero::after {
-            transform: scaleX(1);
         }
 
         .texto {
@@ -145,7 +131,7 @@
 <body>
 
     <div class="header">
-        <img src="InconfidentesBG.png" alt="Turma Inconfidentes">
+        <img src="inconfidentes.png" alt="Turma Inconfidentes">
     </div>
 
     <div>
