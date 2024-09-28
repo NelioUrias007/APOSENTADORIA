@@ -145,7 +145,7 @@
 <body>
 
     <div class="header">
-        <img src="Inconfidentes.png" alt="Turma Inconfidentes">
+        <img src="InconfidentesBG.png" alt="Turma Inconfidentes">
     </div>
 
     <div>
