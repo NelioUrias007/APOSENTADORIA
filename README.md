@@ -304,6 +304,7 @@
                     <img src="sargento8.jpg" alt="Sargento 3">
                     <div class="nome">Sd Pedro Freire</div>
                     <div class="descricao">Thammy Gretchen</div>
+		    <div class="descricao">Marquito</div>
                 </div>
 				
 				<!-- Exemplo de Item 9 -->
@@ -331,6 +332,7 @@
                 <div class="grid-item">
                     <img src="sargento12.jpg" alt="Sargento 3">
                     <div class="nome">Cb Paulo Magalhães</div>
+		    <div class="descricao">Brancão</div>
                     <div class="descricao">Magal</div>
                 </div>
 				
@@ -352,6 +354,7 @@
                 <div class="grid-item">
                     <img src="sargento15.jpg" alt="Sargento 3">
                     <div class="nome">Sd Jobson</div>
+		    <div class="descricao">Torresminho</div>
                     <div class="descricao">Majobson</div>
                 </div>
 				
@@ -396,6 +399,7 @@
                 <div class="grid-item">
                     <img src="sargento21.jpg" alt="Sargento 3">
                     <div class="nome">Sd Oliveira</div>
+		    <div class="descricao">Palmitão</div>
                     <div class="descricao">Zero Um</div>
                 </div>
 				
