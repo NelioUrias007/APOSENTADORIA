@@ -252,8 +252,7 @@
                 <div class="grid-item">
                     <img src="sargento1.jpg" alt="Sargento 1">
                     <div class="nome">Sd Breno</div>
-                    <div class="descricao">Saruê</div>
-					<div class="descricao">Paquito</div>
+                    <div class="descricao">Paquito-Saruê</div>
                 </div>
                 
                 <!-- Exemplo de Item 2 -->
@@ -274,37 +273,35 @@
                 <div class="grid-item">
                     <img src="sargento4.jpg" alt="Sargento 3">
                     <div class="nome">Sd Moisés Henrique</div>
-                    <div class="descricao">Momô</div>
+                    <div class="descricao">Momô S2 Ambiental</div>
                 </div>
 				
 				<!-- Exemplo de Item 5 -->
                 <div class="grid-item">
                     <img src="sargento5.jpg" alt="Sargento 3">
                     <div class="nome">Sd Thaís Cardoso</div>
-                    <div class="descricao">Fofa</div>
+                    <div class="descricao">Gigante Fofa</div>
                 </div>
 				
 				<!-- Exemplo de Item 6 -->
                 <div class="grid-item">
                     <img src="sargento6.jpg" alt="Sargento 3">
                     <div class="nome">Cb Euler</div>
-					<div class="descricao">Zero meia</div>
-                    <div class="descricao">Cabelinho de mola</div>
+		<div class="descricao">Zero meia, cabelo de mola</div>
                 </div>
 				
 				<!-- Exemplo de Item 7 -->
                 <div class="grid-item">
                     <img src="sargento7.jpg" alt="Sargento 3">
                     <div class="nome">Sd Almir</div>
-                    <div class="descricao">Riquinho</div>
+                    <div class="descricao">Fiffe, mei ponto</div>
                 </div>
 				
 				<!-- Exemplo de Item 8 -->
                 <div class="grid-item">
                     <img src="sargento8.jpg" alt="Sargento 3">
                     <div class="nome">Sd Pedro Freire</div>
-                    <div class="descricao">Thammy Gretchen</div>
-		    <div class="descricao">Marquito</div>
+                    <div class="descricao">Tadalafreire, o bunda negativa</div>
                 </div>
 				
 				<!-- Exemplo de Item 9 -->
@@ -325,22 +322,21 @@
                 <div class="grid-item">
                     <img src="sargento11.jpg" alt="Sargento 3">
                     <div class="nome">Sd Dreison</div>
-                    <div class="descricao">Drayson</div>
+                    <div class="descricao">Drayson, o jovem rabujento</div>
                 </div>
 				
 				<!-- Exemplo de Item 12 -->
                 <div class="grid-item">
                     <img src="sargento12.jpg" alt="Sargento 3">
                     <div class="nome">Cb Paulo Magalhães</div>
-		    <div class="descricao">Brancão</div>
-                    <div class="descricao">Magal</div>
+		    <div class="descricao">Brancão, vou te estourar</div>
                 </div>
 				
 				<!-- Exemplo de Item 13-->
                 <div class="grid-item">
                     <img src="sargento13.jpg" alt="Sargento 3">
                     <div class="nome">Cb Paulo Rodrigues</div>
-                    <div class="descricao">Caveirão</div>
+                    <div class="descricao">Caveirão, oooh caveira veia</div>
                 </div>
 				
 				<!-- Exemplo de Item 14 -->
@@ -354,8 +350,7 @@
                 <div class="grid-item">
                     <img src="sargento15.jpg" alt="Sargento 3">
                     <div class="nome">Sd Jobson</div>
-		    <div class="descricao">Torresminho</div>
-                    <div class="descricao">Majobson</div>
+		    <div class="descricao">Majobson, Torresminho</div>
                 </div>
 				
 				<!-- Exemplo de Item 16 -->
@@ -369,46 +364,42 @@
                 <div class="grid-item">
                     <img src="sargento17.jpg" alt="Sargento 3">
                     <div class="nome">Cb Nelio</div>
-                    <div class="descricao">Moreno</div>
-					<div class="descricao">Último Romântico</div>
+                    <div class="descricao">Moreno, o último romântico</div>
                 </div>
 				
 				<!-- Exemplo de Item 18 -->
                 <div class="grid-item">
                     <img src="sargento18.jpg" alt="Sargento 3">
                     <div class="nome">Cb Diego Bruno</div>
-                    <div class="descricao">Cara de Trakinas</div>
+                    <div class="descricao">Tintin, o cara de trakinas</div>
                 </div>
 				
 				<!-- Exemplo de Item 19 -->
                 <div class="grid-item">
                     <img src="sargento19.jpg" alt="Sargento 3">
                     <div class="nome">Cb Sâmara</div>
-                    <div class="descricao">Onça</div>
-					<div class="descricao">Samarina</div>
+                    <div class="descricao">Onça-Samarina</div>
                 </div>
 				
 				<!-- Exemplo de Item 20 -->
                 <div class="grid-item">
                     <img src="sargento20.jpg" alt="Sargento 3">
                     <div class="nome">Sd Renilson</div>
-                    <div class="descricao">Pastor</div>
+                    <div class="descricao">Pastor, o herói do fogo</div>
                 </div>
 				
 				<!-- Exemplo de Item 21 -->
                 <div class="grid-item">
                     <img src="sargento21.jpg" alt="Sargento 3">
                     <div class="nome">Sd Oliveira</div>
-		    <div class="descricao">Palmitão</div>
-                    <div class="descricao">Zero Um</div>
+		    <div class="descricao">Palmitão, o diretor 01</div>
                 </div>
 				
 				<!-- Exemplo de Item 22 -->
                 <div class="grid-item">
                     <img src="sargento22.jpg" alt="Sargento 3">
                     <div class="nome">Sd Sara</div>
-                    <div class="descricao">Sarinha</div>
-					<div class="descricao">Perfeita</div>
+                    <div class="descricao">Sarinha, perfeita</div>
                 </div>
 				
 				<!-- Exemplo de Item 23 -->
@@ -422,42 +413,42 @@
                 <div class="grid-item">
                     <img src="sargento24.jpg" alt="Sargento 3">
                     <div class="nome">Cb Erickson</div>
-                    <div class="descricao">Papai</div>
+                    <div class="descricao">Erico, o Masa meio joelho e meio pulmão</div>
                 </div>
 
 				<!-- Exemplo de Item 25 -->
                 <div class="grid-item">
                     <img src="sargento25.jpg" alt="Sargento 3">
                     <div class="nome">Sd Vinte</div>
-                    <div class="descricao">Ms. Pum</div>
+                    <div class="descricao">Ms. Pum, YESSSS</div>
                 </div>
 
 				<!-- Exemplo de Item 26 -->
                 <div class="grid-item">
                     <img src="sargento26.jpg" alt="Sargento 3">
                     <div class="nome">Cb Marcus Vinicius</div>
-                    <div class="descricao">Tião</div>
+                    <div class="descricao">Tião, o Sebastião</div>
                 </div>
 
 				<!-- Exemplo de Item 27 -->
                 <div class="grid-item">
                     <img src="sargento27.jpg" alt="Sargento 3">
                     <div class="nome">Sd Sérgio</div>
-                    <div class="descricao">Gru</div>
+                    <div class="descricao">Gru, meu amarrotado favorito</div>
                 </div>
 
 				<!-- Exemplo de Item 28 -->
                 <div class="grid-item">
                     <img src="sargento28.jpg" alt="Sargento 3">
                     <div class="nome">Sd Maedsson</div>
-                    <div class="descricao">Sub</div>
+                    <div class="descricao">Sub, o ressucitado</div>
                 </div>
 
 				<!-- Exemplo de Item 29 -->
                 <div class="grid-item">
                     <img src="sargento29.jpg" alt="Sargento 3">
                     <div class="nome">Sd Leão</div>
-                    <div class="descricao">Lion</div>
+                    <div class="descricao">Lion, lipe gatão</div>
                 </div>
 
 				<!-- Exemplo de Item 30 -->
@@ -472,7 +463,7 @@
                 <div class="grid-item">
                     <img src="sargento31.jpg" alt="Sargento 31">
                     <div class="nome">Sd Drummond</div>
-                    <div class="descricao">Draimon</div>
+                    <div class="descricao">Draimon, Top 01?</div>
                 </div>
 
                 <!-- Fim dos 31 itens do Carômetro -->
