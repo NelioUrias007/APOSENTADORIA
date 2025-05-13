@@ -12,7 +12,12 @@
     }
     h1 {
       font-size: 2.5em;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+      color: #005f73;
     }
     .contador {
       font-size: 2em;
@@ -32,10 +37,13 @@
 </head>
 <body>
 
-  <h1>⏳ Contador para sua Aposentadoria!</h1>
+  <h1>⏳ Contador para sua Aposentadoria</h1>
+  <h2>Data estimada: <strong>13 de novembro de 2027</strong></h2>
+
   <div class="contador" id="contador">
     Calculando...
   </div>
+
   <div class="motivacao">
     "Cada dia é um passo rumo ao merecido descanso. Continue firme!"
   </div>
